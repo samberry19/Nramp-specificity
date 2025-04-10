@@ -1,11 +1,11 @@
-## BARCODE-VARIANT MAPPING README
+# Barcode-variant mapping analysis
 
 This directory contains information relevant for replicating the barcode-variant mapping analysis done on 3 separate Nanopore runs in Berry et al. (2025). It is also my hope that it would allow another researcher to perform a similar analysis.
 
-INPUT DATA
+### Input data 
 The original data used here is too large to include directly in this repository. You can download it from [...] and add it directly to this folder. Note that all code in this directory should be run on a supercomputing cluster. Approximate time and memory usage requirements will be laid out below.
 
-EXTERNAL TOOLS
+### External tools
 This code relies on several external pieces of software. The first is minimap2, which can be downloaded from here: https://github.com/lh3/minimap2. The version of minimap2 used in Berry et al. (2025) is . Example code to run minimap2 is:
 
 ../minimap2-2.26_x64-linux/minimap2 -a -x map-ont library_2_wt.fa NW72DZ_1_sample_1.fastq.gz -o lib2_alignment.sam
